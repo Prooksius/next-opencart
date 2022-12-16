@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+RewriteRule ^upload/(.*)$ upload/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^admin(\/?.*)$ /backend/web/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/(api)
+RewriteRule ^api(\/?.*)$ /frontend/web/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/
+RewriteRule ^(\/?.*)$ /nextfront/$1 [L]

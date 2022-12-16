@@ -1,0 +1,10 @@
+.idea
+build/
+vendor/
+examples/callback.txt
+.env
+/.phpunit.cache
+.phpunit.result.cache
+# composer
+composer.phar
+composer.lock

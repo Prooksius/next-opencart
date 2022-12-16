@@ -1,0 +1,14 @@
+.preloader {
+
+}
+
+.bar {
+    width: 80%;
+    background: #ddd;
+    margin: 0 auto;
+}
+
+.load {
+    width: 0%;
+    height: 20px;
+}

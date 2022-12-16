@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="B2Binpay_PHP">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="GATEWAY" value="localhost"/>
+        <env name="AUTH_KEY" value="a"/>
+        <env name="AUTH_SECRET" value="b"/>
+        <env name="SIGN_STRING" value="a:b:1"/>
+        <env name="AUTH_BASIC" value="YTpi"/>
+        <env name="AUTH" value="Basic YTpi"/>
+        <env name="CURRENCY_ISO" value="1000"/>
+        <env name="CURRENCY_ALPHA" value="BTC"/>
+        <env name="CURRENCY_NAME" value="Bitcoin"/>
+        <env name="CURRENCY_PRECISION" value="8"/>
+        <env name="UNKNOWN_CURRENCY_ISO" value="9999"/>
+        <env name="UNKNOWN_CURRENCY_ALPHA" value="TEST"/>
+        <env name="NODE" value="https://btc.b2binpay.com"/>
+        <env name="SIGN_TIME" value="Tue Aug 11 2020 15:56:15 GMT+0000"/>
+        <env name="SIGN_HASH" value="$2y$10$SBkrTEoZrcjUO9tbIqJ9meU8rdevghPN6xlC5QRIps7KSI7NJbZGC"/>
+    </php>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+    </logging>
+</phpunit>

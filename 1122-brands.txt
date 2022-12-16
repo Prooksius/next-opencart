@@ -1,0 +1,14 @@
+
+		SELECT 
+			m.id AS manufacturer_id, 
+			md.name AS brand_name, 
+			COUNT(DISTINCT p.id) AS quantity, 
+			m.alias AS alias
+			
+    FROM oc_manufacturer m 
+    LEFT JOIN oc_manufacturer_description md ON (m.id = md.manufacturer_id) 
+				LEFT JOIN oc_product p ON (m.id = p.manufacturer_id) 
+						LEFT JOIN oc_product_to_category p2c ON (p.id = p2c.product_id) 
+						LEFT JOIN oc_category_path cp ON (cp.category_id = p2c.category_id) 
+			WHERE 
+				md.language_id = 'ru-RU' AND cp.path_id = '20' AND p.status = '1' GROUP BY m.id ORDER BY md.name ASC

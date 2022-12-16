@@ -1,0 +1,1463 @@
+html,
+body {
+	height: 100%;
+}
+
+.wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+}
+
+.wrap > .container {
+	padding: 70px 15px 20px;
+}
+
+.footer {
+	height: 60px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: transparent;
+}
+
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+.not-set {
+	color: #c55;
+	font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after,
+a.desc:after {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	padding-left: 5px;
+}
+
+a.asc:after {
+	content: /*"\e113"*/ '\e151';
+}
+
+a.desc:after {
+	content: /*"\e114"*/ '\e152';
+}
+
+.sort-numerical a.asc:after {
+	content: '\e153';
+}
+
+.sort-numerical a.desc:after {
+	content: '\e154';
+}
+
+.sort-ordinal a.asc:after {
+	content: '\e155';
+}
+
+.sort-ordinal a.desc:after {
+	content: '\e156';
+}
+
+.grid-view td {
+	white-space: nowrap;
+}
+.grid-view td.wrapped {
+	white-space: normal;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+	min-width: 50px;
+}
+
+.hint-block {
+	display: block;
+	margin-top: 5px;
+	color: #999;
+}
+
+.error-summary {
+	color: #a94442;
+	background: #fdf7f7;
+	border-left: 3px solid #eed3d7;
+	padding: 10px 20px;
+	margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+	padding: 15px;
+	border: none;
+}
+
+@media (max-width: 767px) {
+	.nav li > form > button.logout {
+		display: block;
+		text-align: left;
+		width: 100%;
+		padding: 10px 15px;
+	}
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+	text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+	outline: none;
+}
+
+.picture {
+	max-width: 100%;
+	width: 150px;
+	max-height: 150px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	cursor: grab;
+}
+@media (max-width: 1199px) {
+	.picture {
+		max-height: 200px;
+		height: 200px;
+		width: 200px;
+	}
+}
+
+.document-div {
+	position: relative;
+}
+.document-div .btn-group {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.document-div .picture span {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.document-div .picture {
+	width: calc(100% - 128px);
+	max-width: 100%;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #ecf0f5;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	cursor: default;
+}
+@media (max-width: 1199px) {
+	.document-div .picture {
+		height: 36px;
+		width: calc(100% - 128px);
+	}
+}
+
+table .thumbnail {
+	margin-bottom: 0;
+}
+
+.properties-list li a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.form-control.inactive {
+	background-color: #ecf0f5;
+	pointer-events: none;
+}
+
+.well-group .checkbox {
+	margin: 0;
+}
+.well-group .table > thead > tr > th,
+.well-group .table > tbody > tr > th,
+.well-group .table > tfoot > tr > th,
+.well-group .table > thead > tr > td,
+.well-group .table > tbody > tr > td,
+.well-group .table > tfoot > tr > td {
+	border-top: 1px solid #ddd;
+}
+.well-group > a {
+	cursor: pointer;
+}
+
+.chboxcolumn label {
+	display: block;
+}
+.tab-pane {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.attributes-cont .col-sm-8 input.form-control,
+.pimage_row .sort-order-input {
+	width: calc(100% - 42px);
+	display: inline-block;
+	margin-right: 10px;
+}
+.attributes-cont .col-sm-8 .delete_attr,
+.pimage_row .delete_attr {
+	display: inline-block;
+}
+.pimage_row {
+	padding-top: 20px;
+	padding-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: #d9d9d9;
+	min-height: 192px;
+}
+.pimage_row .delete_attr {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.picture-div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.picture-div.table-picture {
+	margin: 0;
+}
+.picture-div.left-align {
+	margin-left: 0;
+}
+.picture-div.grey-bg .picture {
+	background-color: #ddd;
+}
+.picture-div .btn-group {
+	position: absolute;
+	bottom: 2px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.picture-div img {
+	max-height: 100%;
+	max-width: 100%;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.picture-div:hover .btn-group {
+	opacity: 1;
+	visibility: visible;
+}
+.picture-div:hover img {
+	opacity: 0.7;
+}
+.pimage_row .image-column {
+	position: relative;
+	border: 1px dashed transparent;
+}
+.pimage_row .sortable-placeholder {
+	border: 1px dashed #555;
+	margin-bottom: 20px;
+}
+
+.pimage_row .image-column {
+	margin-bottom: 20px;
+}
+
+.ui-sortable-helper .btn-group {
+	opacity: 0;
+	visibility: hidden;
+}
+.ui-state-highlight {
+	height: auto;
+	background-color: #d3f2ce !important;
+	line-height: 1.2em;
+}
+
+.position-content {
+	border: 1px solid #ddd;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.position-content.margin-bottom {
+	margin-bottom: 15px;
+}
+.position-content.margin-top {
+	margin-top: 15px;
+}
+.position-content .table {
+	margin-bottom: 0;
+}
+.layout-page-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	margin: 15px 0;
+	min-height: 30px;
+	border: 1px solid #ddd;
+}
+td.add-module-btn {
+	cursor: pointer;
+	color: #3c8dbc;
+}
+td.add-module-btn:hover {
+	text-decoration: underline;
+}
+
+.checkbox-tree-cont {
+	background-color: #f8f8f8;
+	padding: 10px;
+	max-height: 400px;
+	overflow: auto;
+}
+.checkbox-tree-cont .children-group {
+	padding-left: 25px;
+	position: relative;
+}
+.checkbox-tree-cont .children-group:before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #888;
+	border-bottom: 1px solid #888;
+	top: 0px;
+	left: 6px;
+	border-bottom-left-radius: 5px;
+}
+.grid-view .table > tbody > tr > td {
+	vertical-align: middle;
+}
+
+input[type='text'].changed,
+input[type='number'].changed,
+select.changed {
+	border-color: #985f0d;
+}
+input[type='text'].updated,
+input[type='number'].updated,
+select.updated,
+select:focus.updated,
+select:active.updated {
+	border-color: #00a500;
+}
+td.text-right input {
+	text-align: right;
+}
+td.text-center input {
+	text-align: center;
+}
+.dd-item > button {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.dd3-content {
+	height: 45px;
+	padding: 0 10px 0 40px;
+	font-weight: normal;
+}
+.dd3-content .content-item {
+	display: inline-block;
+	line-height: 45px;
+}
+.dd3-content .content-item .label {
+	min-width: 30px;
+	display: inline-block;
+	line-height: normal;
+	vertical-align: middle;
+}
+.dd3-content .content-item form {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.dd3-content .content-item form input[type='text'] {
+	margin-top: -5px;
+}
+.dd3-content .content-item.name form {
+	width: 100%;
+}
+.dd3-content .content-item.name {
+	width: 50%;
+	font-weight: normal;
+	padding-right: 30px;
+	border-right: 1px solid #ddd;
+}
+.dd3-content .actionColumn {
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+.dd-list .dd3-content .content-item.additional {
+	position: absolute;
+	left: 60%;
+}
+.dd-list .dd-list .dd3-content .content-item.additional {
+	left: calc(60% - 12px);
+}
+.dd-list .dd-list .dd-list .dd3-content .content-item.additional {
+	left: calc(60% - 24px);
+}
+.dd-list .dd-list .dd-list .dd-list .dd3-content .content-item.additional {
+	left: calc(60% - 36px);
+}
+.dd-list
+	.dd-list
+	.dd-list
+	.dd-list
+	.dd-list
+	.dd3-content
+	.content-item.additional {
+	left: calc(60% - 48px);
+}
+.dd .header-line {
+	position: relative;
+	padding-left: 40px;
+	padding-right: 93px;
+}
+.dd .header-line span {
+	font-weight: bold;
+	display: inline-block;
+}
+.dd .header-line span + span {
+	margin-left: 15px;
+}
+.dd .header-line span:first-of-type {
+	width: 55%;
+}
+.dd .header-line .actions-cont {
+	position: absolute;
+	right: 20px;
+}
+.dd3-handle {
+	height: 45px;
+}
+.dd3-handle::before {
+	top: 12px;
+}
+.dd-list .dd3-content .content-item.additional .item-data {
+	display: inline-block;
+}
+.dd-list .dd3-content .content-item.additional .item-data + .item-data {
+	margin-left: 15px;
+	padding-left: 5px;
+	border-left: 1px solid #ddd;
+}
+
+.select-contain {
+	padding-right: 32px;
+	margin-right: -27px;
+	width: 100%;
+	display: inline-block;
+}
+.makers-cont .select-contain {
+	width: auto;
+}
+.makers-cont .form-control {
+	width: auto;
+	display: inline-block;
+}
+
+.selectize-control.multi .selectize-input > div {
+	background: #b2e567;
+	padding-left: 7px;
+}
+.selectize-control.multi .selectize-input > div.active {
+	background: #87b346;
+	color: #fff;
+}
+
+.functions-list {
+	padding-left: 25px;
+}
+.functions-list .functions-item {
+	padding: 3px 10px 4px 10px;
+	border-radius: 15px;
+	white-space: nowrap;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.fancybox-popup .grid-view {
+	max-height: 400px;
+	overflow-y: auto;
+}
+.fancybox-popup .grid-view .table {
+	margin-bottom: 0;
+	border-top: none;
+}
+.fancybox-popup .grid-view .summary {
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+}
+.fancybox-popup .grid-view .table thead {
+	position: sticky;
+	top: 0px;
+}
+.fancybox-popup .grid-view .table thead th,
+.fancybox-popup .grid-view .table thead td {
+	background-color: #fff;
+}
+#customer-choose-form {
+	padding: 44px 15px 25px 25px;
+	min-height: 510px;
+	max-width: 1000px;
+}
+
+.promocodes-row {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.promocodes-row:first-child {
+	padding-top: 15px;
+	margin-top: 15px;
+	border-top: 1px solid #ccc;
+}
+.promocode-error {
+	color: red;
+}
+.promocode-delete {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+.promocode-delete > div {
+	flex: 1;
+}
+.promocode-delete button {
+	margin-left: 15px;
+}
+
+.grid-view .oranged td {
+	background-color: #f7e1b5;
+}
+
+.referals-container {
+	padding: 10px 0;
+	background-color: #fff;
+}
+.client-area .childs-cont {
+	padding-left: 15px;
+}
+.client-area .header-line,
+.client-area .data-line {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.client-area .data-line.greyed * {
+	color: lightgrey !important;
+}
+.client-area td {
+	padding: 10px;
+}
+.client-area .plus {
+	width: 32px;
+	text-align: center;
+}
+.client-area .plus i {
+	cursor: pointer;
+	vertical-align: middle;
+}
+.client-area .name {
+	width: 240px;
+}
+.client-area .childs-cont .name {
+	width: 225px;
+}
+.client-area .childs-cont .childs-cont .name {
+	width: 210px;
+}
+.client-area .childs-cont .childs-cont .childs-cont .name {
+	width: 195px;
+}
+.client-area .childs-cont .childs-cont .childs-cont .childs-cont .name {
+	width: 180px;
+}
+.client-area
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.name {
+	width: 165px;
+}
+.client-area
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.name {
+	width: 150px;
+}
+.client-area
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.name {
+	width: 135px;
+}
+.client-area
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.childs-cont
+	.name {
+	width: 120px;
+}
+.client-area .email,
+.client-area .type,
+.client-area .phone,
+.client-area .history {
+	width: 200px;
+}
+.client-area .type {
+	width: 100px;
+}
+
+.customer-choose-widget__cont {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 0 2px 0 10px;
+}
+.customer-choose-widget__info {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+.customer-choose-widget__btns {
+	position: absolute;
+	right: 1px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+.customer-choose-widget__btns .btn {
+	height: 30px;
+	line-height: normal;
+}
+.customer-choose-widget__cont:hover .customer-choose-widget__btns {
+	opacity: 1;
+	visibility: visible;
+}
+
+.customer-choose-widget {
+	border: 1px solid #ddd;
+	height: 34px;
+}
+.customer-choose-widget .customer-choose-widget__cont {
+	height: 100%;
+}
+.customer-choose-widget .customer-choose-widget__info img {
+	max-height: 28px;
+}
+
+.product-select-widget {
+}
+.product-select-widget .customer-name {
+	line-height: 34px;
+	padding-left: 15px;
+}
+.product-select-widget .selections {
+	flex: 1;
+}
+
+.product-select-widget .delete {
+	padding: 0 10px;
+	cursor: pointer;
+}
+.product-select-widget .delete:hover {
+	background-color: #ddd;
+}
+
+.flag {
+	display: block;
+	margin-top: -5px;
+	transform: scale(0.87);
+	margin-left: -5px;
+	width: 24px;
+	height: 24px;
+	background: url(../img/flags.png) no-repeat;
+}
+.flag.inline {
+	display: inline-block;
+	vertical-align: middle;
+	transform: scale(1);
+	margin: 0;
+}
+.flag.flag-ad {
+	background-position: 0 0;
+}
+.flag.flag-ae {
+	background-position: -24px 0;
+}
+.flag.flag-af {
+	background-position: -48px 0;
+}
+.flag.flag-ag {
+	background-position: -72px 0;
+}
+.flag.flag-ai {
+	background-position: -96px 0;
+}
+.flag.flag-al {
+	background-position: -120px 0;
+}
+.flag.flag-am {
+	background-position: -144px 0;
+}
+.flag.flag-an {
+	background-position: -168px 0;
+}
+.flag.flag-ao {
+	background-position: -192px 0;
+}
+.flag.flag-aq {
+	background-position: -216px 0;
+}
+.flag.flag-ar {
+	background-position: -240px 0;
+}
+.flag.flag-as {
+	background-position: -264px 0;
+}
+.flag.flag-at {
+	background-position: -288px 0;
+}
+.flag.flag-au {
+	background-position: -312px 0;
+}
+.flag.flag-aw {
+	background-position: -336px 0;
+}
+.flag.flag-ax {
+	background-position: -360px 0;
+}
+.flag.flag-az {
+	background-position: 0 -24px;
+}
+.flag.flag-ba {
+	background-position: -24px -24px;
+}
+.flag.flag-bb {
+	background-position: -48px -24px;
+}
+.flag.flag-bd {
+	background-position: -72px -24px;
+}
+.flag.flag-be {
+	background-position: -96px -24px;
+}
+.flag.flag-bf {
+	background-position: -120px -24px;
+}
+.flag.flag-bg {
+	background-position: -144px -24px;
+}
+.flag.flag-bh {
+	background-position: -168px -24px;
+}
+.flag.flag-bi {
+	background-position: -192px -24px;
+}
+.flag.flag-bj {
+	background-position: -216px -24px;
+}
+.flag.flag-bl {
+	background-position: -240px -24px;
+}
+.flag.flag-bm {
+	background-position: -264px -24px;
+}
+.flag.flag-bn {
+	background-position: -288px -24px;
+}
+.flag.flag-bo {
+	background-position: -312px -24px;
+}
+.flag.flag-br {
+	background-position: -336px -24px;
+}
+.flag.flag-bs {
+	background-position: -360px -24px;
+}
+.flag.flag-bt {
+	background-position: 0 -48px;
+}
+.flag.flag-bw {
+	background-position: -24px -48px;
+}
+.flag.flag-by {
+	background-position: -48px -48px;
+}
+.flag.flag-bz {
+	background-position: -72px -48px;
+}
+.flag.flag-ca {
+	background-position: -96px -48px;
+}
+.flag.flag-cc {
+	background-position: -120px -48px;
+}
+.flag.flag-cd {
+	background-position: -144px -48px;
+}
+.flag.flag-cf {
+	background-position: -168px -48px;
+}
+.flag.flag-cg {
+	background-position: -192px -48px;
+}
+.flag.flag-ch {
+	background-position: -216px -48px;
+}
+.flag.flag-ci {
+	background-position: -240px -48px;
+}
+.flag.flag-ck {
+	background-position: -264px -48px;
+}
+.flag.flag-cl {
+	background-position: -288px -48px;
+}
+.flag.flag-cm {
+	background-position: -312px -48px;
+}
+.flag.flag-cn {
+	background-position: -336px -48px;
+}
+.flag.flag-co {
+	background-position: -360px -48px;
+}
+.flag.flag-cr {
+	background-position: 0 -72px;
+}
+.flag.flag-cu {
+	background-position: -24px -72px;
+}
+.flag.flag-cv {
+	background-position: -48px -72px;
+}
+.flag.flag-cw {
+	background-position: -72px -72px;
+}
+.flag.flag-cx {
+	background-position: -96px -72px;
+}
+.flag.flag-cy {
+	background-position: -120px -72px;
+}
+.flag.flag-cz {
+	background-position: -144px -72px;
+}
+.flag.flag-de {
+	background-position: -168px -72px;
+}
+.flag.flag-dj {
+	background-position: -192px -72px;
+}
+.flag.flag-dk {
+	background-position: -216px -72px;
+}
+.flag.flag-dm {
+	background-position: -240px -72px;
+}
+.flag.flag-do {
+	background-position: -264px -72px;
+}
+.flag.flag-dz {
+	background-position: -288px -72px;
+}
+.flag.flag-ec {
+	background-position: -312px -72px;
+}
+.flag.flag-ee {
+	background-position: -336px -72px;
+}
+.flag.flag-eg {
+	background-position: -360px -72px;
+}
+.flag.flag-eh {
+	background-position: 0 -96px;
+}
+.flag.flag-er {
+	background-position: -24px -96px;
+}
+.flag.flag-es {
+	background-position: -48px -96px;
+}
+.flag.flag-et {
+	background-position: -72px -96px;
+}
+.flag.flag-eu {
+	background-position: -96px -96px;
+}
+.flag.flag-fi {
+	background-position: -120px -96px;
+}
+.flag.flag-fj {
+	background-position: -144px -96px;
+}
+.flag.flag-fk {
+	background-position: -168px -96px;
+}
+.flag.flag-fm {
+	background-position: -192px -96px;
+}
+.flag.flag-fo {
+	background-position: -216px -96px;
+}
+.flag.flag-fr {
+	background-position: -240px -96px;
+}
+.flag.flag-ga {
+	background-position: -264px -96px;
+}
+.flag.flag-gb {
+	background-position: -288px -96px;
+}
+.flag.flag-gd {
+	background-position: -312px -96px;
+}
+.flag.flag-ge {
+	background-position: -336px -96px;
+}
+.flag.flag-gg {
+	background-position: -360px -96px;
+}
+.flag.flag-gh {
+	background-position: 0 -120px;
+}
+.flag.flag-gi {
+	background-position: -24px -120px;
+}
+.flag.flag-gl {
+	background-position: -48px -120px;
+}
+.flag.flag-gm {
+	background-position: -72px -120px;
+}
+.flag.flag-gn {
+	background-position: -96px -120px;
+}
+.flag.flag-gq {
+	background-position: -120px -120px;
+}
+.flag.flag-gr {
+	background-position: -144px -120px;
+}
+.flag.flag-gs {
+	background-position: -168px -120px;
+}
+.flag.flag-gt {
+	background-position: -192px -120px;
+}
+.flag.flag-gu {
+	background-position: -216px -120px;
+}
+.flag.flag-gw {
+	background-position: -240px -120px;
+}
+.flag.flag-gy {
+	background-position: -264px -120px;
+}
+.flag.flag-hk {
+	background-position: -288px -120px;
+}
+.flag.flag-hn {
+	background-position: -312px -120px;
+}
+.flag.flag-hr {
+	background-position: -336px -120px;
+}
+.flag.flag-ht {
+	background-position: -360px -120px;
+}
+.flag.flag-hu {
+	background-position: 0 -144px;
+}
+.flag.flag-ic {
+	background-position: -24px -144px;
+}
+.flag.flag-id {
+	background-position: -48px -144px;
+}
+.flag.flag-ie {
+	background-position: -72px -144px;
+}
+.flag.flag-il {
+	background-position: -96px -144px;
+}
+.flag.flag-im {
+	background-position: -120px -144px;
+}
+.flag.flag-in {
+	background-position: -144px -144px;
+}
+.flag.flag-iq {
+	background-position: -168px -144px;
+}
+.flag.flag-ir {
+	background-position: -192px -144px;
+}
+.flag.flag-is {
+	background-position: -216px -144px;
+}
+.flag.flag-it {
+	background-position: -240px -144px;
+}
+.flag.flag-je {
+	background-position: -264px -144px;
+}
+.flag.flag-jm {
+	background-position: -288px -144px;
+}
+.flag.flag-jo {
+	background-position: -312px -144px;
+}
+.flag.flag-jp {
+	background-position: -336px -144px;
+}
+.flag.flag-ke {
+	background-position: -360px -144px;
+}
+.flag.flag-kg {
+	background-position: 0 -168px;
+}
+.flag.flag-kh {
+	background-position: -24px -168px;
+}
+.flag.flag-ki {
+	background-position: -48px -168px;
+}
+.flag.flag-km {
+	background-position: -72px -168px;
+}
+.flag.flag-kn {
+	background-position: -96px -168px;
+}
+.flag.flag-kp {
+	background-position: -120px -168px;
+}
+.flag.flag-kr {
+	background-position: -144px -168px;
+}
+.flag.flag-kw {
+	background-position: -168px -168px;
+}
+.flag.flag-ky {
+	background-position: -192px -168px;
+}
+.flag.flag-kz {
+	background-position: -216px -168px;
+}
+.flag.flag-la {
+	background-position: -240px -168px;
+}
+.flag.flag-lb {
+	background-position: -264px -168px;
+}
+.flag.flag-lc {
+	background-position: -288px -168px;
+}
+.flag.flag-li {
+	background-position: -312px -168px;
+}
+.flag.flag-lk {
+	background-position: -336px -168px;
+}
+.flag.flag-lr {
+	background-position: -360px -168px;
+}
+.flag.flag-ls {
+	background-position: 0 -192px;
+}
+.flag.flag-lt {
+	background-position: -24px -192px;
+}
+.flag.flag-lu {
+	background-position: -48px -192px;
+}
+.flag.flag-lv {
+	background-position: -72px -192px;
+}
+.flag.flag-ly {
+	background-position: -96px -192px;
+}
+.flag.flag-ma {
+	background-position: -120px -192px;
+}
+.flag.flag-mc {
+	background-position: -144px -192px;
+}
+.flag.flag-md {
+	background-position: -168px -192px;
+}
+.flag.flag-me {
+	background-position: -192px -192px;
+}
+.flag.flag-mf {
+	background-position: -216px -192px;
+}
+.flag.flag-mg {
+	background-position: -240px -192px;
+}
+.flag.flag-mh {
+	background-position: -264px -192px;
+}
+.flag.flag-mk {
+	background-position: -288px -192px;
+}
+.flag.flag-ml {
+	background-position: -312px -192px;
+}
+.flag.flag-mm {
+	background-position: -336px -192px;
+}
+.flag.flag-mn {
+	background-position: -360px -192px;
+}
+.flag.flag-mo {
+	background-position: 0 -216px;
+}
+.flag.flag-mp {
+	background-position: -24px -216px;
+}
+.flag.flag-mq {
+	background-position: -48px -216px;
+}
+.flag.flag-mr {
+	background-position: -72px -216px;
+}
+.flag.flag-ms {
+	background-position: -96px -216px;
+}
+.flag.flag-mt {
+	background-position: -120px -216px;
+}
+.flag.flag-mu {
+	background-position: -144px -216px;
+}
+.flag.flag-mv {
+	background-position: -168px -216px;
+}
+.flag.flag-mw {
+	background-position: -192px -216px;
+}
+.flag.flag-mx {
+	background-position: -216px -216px;
+}
+.flag.flag-my {
+	background-position: -240px -216px;
+}
+.flag.flag-mz {
+	background-position: -264px -216px;
+}
+.flag.flag-na {
+	background-position: -288px -216px;
+}
+.flag.flag-nc {
+	background-position: -312px -216px;
+}
+.flag.flag-ne {
+	background-position: -336px -216px;
+}
+.flag.flag-nf {
+	background-position: -360px -216px;
+}
+.flag.flag-ng {
+	background-position: 0 -240px;
+}
+.flag.flag-ni {
+	background-position: -24px -240px;
+}
+.flag.flag-nl {
+	background-position: -48px -240px;
+}
+.flag.flag-no {
+	background-position: -72px -240px;
+}
+.flag.flag-np {
+	background-position: -96px -240px;
+}
+.flag.flag-nr {
+	background-position: -120px -240px;
+}
+.flag.flag-nu {
+	background-position: -144px -240px;
+}
+.flag.flag-nz {
+	background-position: -168px -240px;
+}
+.flag.flag-om {
+	background-position: -192px -240px;
+}
+.flag.flag-pa {
+	background-position: -216px -240px;
+}
+.flag.flag-pe {
+	background-position: -240px -240px;
+}
+.flag.flag-pf {
+	background-position: -264px -240px;
+}
+.flag.flag-pg {
+	background-position: -288px -240px;
+}
+.flag.flag-ph {
+	background-position: -312px -240px;
+}
+.flag.flag-pk {
+	background-position: -336px -240px;
+}
+.flag.flag-pl {
+	background-position: -360px -240px;
+}
+.flag.flag-pn {
+	background-position: 0 -264px;
+}
+.flag.flag-pr {
+	background-position: -24px -264px;
+}
+.flag.flag-ps {
+	background-position: -48px -264px;
+}
+.flag.flag-pt {
+	background-position: -72px -264px;
+}
+.flag.flag-pw {
+	background-position: -96px -264px;
+}
+.flag.flag-py {
+	background-position: -120px -264px;
+}
+.flag.flag-qa {
+	background-position: -144px -264px;
+}
+.flag.flag-ro {
+	background-position: -168px -264px;
+}
+.flag.flag-rs {
+	background-position: -192px -264px;
+}
+.flag.flag-ru {
+	background-position: -216px -264px;
+}
+.flag.flag-rw {
+	background-position: -240px -264px;
+}
+.flag.flag-sa {
+	background-position: -264px -264px;
+}
+.flag.flag-sb {
+	background-position: -288px -264px;
+}
+.flag.flag-sc {
+	background-position: -312px -264px;
+}
+.flag.flag-sd {
+	background-position: -336px -264px;
+}
+.flag.flag-se {
+	background-position: -360px -264px;
+}
+.flag.flag-sg {
+	background-position: 0 -288px;
+}
+.flag.flag-sh {
+	background-position: -24px -288px;
+}
+.flag.flag-si {
+	background-position: -48px -288px;
+}
+.flag.flag-sk {
+	background-position: -72px -288px;
+}
+.flag.flag-sl {
+	background-position: -96px -288px;
+}
+.flag.flag-sm {
+	background-position: -120px -288px;
+}
+.flag.flag-sn {
+	background-position: -144px -288px;
+}
+.flag.flag-so {
+	background-position: -168px -288px;
+}
+.flag.flag-sr {
+	background-position: -192px -288px;
+}
+.flag.flag-ss {
+	background-position: -216px -288px;
+}
+.flag.flag-st {
+	background-position: -240px -288px;
+}
+.flag.flag-sv {
+	background-position: -264px -288px;
+}
+.flag.flag-sy {
+	background-position: -288px -288px;
+}
+.flag.flag-sz {
+	background-position: -312px -288px;
+}
+.flag.flag-tc {
+	background-position: -336px -288px;
+}
+.flag.flag-td {
+	background-position: -360px -288px;
+}
+.flag.flag-tf {
+	background-position: 0 -312px;
+}
+.flag.flag-tg {
+	background-position: -24px -312px;
+}
+.flag.flag-th {
+	background-position: -48px -312px;
+}
+.flag.flag-tj {
+	background-position: -72px -312px;
+}
+.flag.flag-tk {
+	background-position: -96px -312px;
+}
+.flag.flag-tl {
+	background-position: -120px -312px;
+}
+.flag.flag-tm {
+	background-position: -144px -312px;
+}
+.flag.flag-tn {
+	background-position: -168px -312px;
+}
+.flag.flag-to {
+	background-position: -192px -312px;
+}
+.flag.flag-tr {
+	background-position: -216px -312px;
+}
+.flag.flag-tt {
+	background-position: -240px -312px;
+}
+.flag.flag-tv {
+	background-position: -264px -312px;
+}
+.flag.flag-tw {
+	background-position: -288px -312px;
+}
+.flag.flag-tz {
+	background-position: -312px -312px;
+}
+.flag.flag-ua {
+	background-position: -336px -312px;
+}
+.flag.flag-ug {
+	background-position: -360px -312px;
+}
+.flag.flag-us {
+	background-position: 0 -336px;
+}
+.flag.flag-uy {
+	background-position: -24px -336px;
+}
+.flag.flag-uz {
+	background-position: -48px -336px;
+}
+.flag.flag-va {
+	background-position: -72px -336px;
+}
+.flag.flag-vc {
+	background-position: -96px -336px;
+}
+.flag.flag-ve {
+	background-position: -120px -336px;
+}
+.flag.flag-vg {
+	background-position: -144px -336px;
+}
+.flag.flag-vi {
+	background-position: -168px -336px;
+}
+.flag.flag-vn {
+	background-position: -192px -336px;
+}
+.flag.flag-vu {
+	background-position: -216px -336px;
+}
+.flag.flag-wf {
+	background-position: -240px -336px;
+}
+.flag.flag-ws {
+	background-position: -264px -336px;
+}
+.flag.flag-ye {
+	background-position: -288px -336px;
+}
+.flag.flag-yt {
+	background-position: -312px -336px;
+}
+.flag.flag-za {
+	background-position: -336px -336px;
+}
+.flag.flag-zm {
+	background-position: -360px -336px;
+}
+.flag.flag-zw {
+	background-position: 0 -360px;
+}

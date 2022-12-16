@@ -1,0 +1,5 @@
+{
+    "require": {
+        "b2binpay/api-php": "^1.2"
+    }
+}

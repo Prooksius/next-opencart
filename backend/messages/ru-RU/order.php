@@ -1,0 +1,35 @@
+<?php
+/**
+ * Translation map for ru-RU
+ */
+return [
+    'Sales' => 'Продажи',
+    'Orders' => 'Заказы',
+    'Order' => 'Заказ',
+    'Order #' => 'Заказ №',
+    'Create Date' => 'Дата создания',
+    'Customer' => 'Покупатель',
+    'Customer Group' => 'Группа покупателей',
+    'Order Status' => 'Статус заказа',
+    'Full Name' => 'ФИО покупателя',
+    'Email' => 'Email',
+    'Phone' => 'Телефон',
+    'Comment' => 'Комментарий к заказу',
+    'Product total' => 'Сумма',
+    'Notify' => 'Уведомить покупателя',
+    'Total' => 'Сумма заказа',
+    'Delivery method' => 'Способ доставки',
+    'Payment method' => 'Способ оплаты',
+    'Products' => 'Заказанных товаров',
+    'Geo Coordinates' => 'Гео координаты',
+    'Order address' => 'Адрес заказа',
+    'Order information' => 'Информация о заказе',
+    'Order details' => 'Детали заказа',
+    'Order history' => 'История заказа',
+    'Additional info' => 'Дополнительно',
+    'Manage Order history' => 'Управление историей заказа',
+    'Add Order history' => 'Добавить историю',
+    'Order history successfully updated' => 'История заказа успешно обновлена',
+    'Customer information' => 'Информация о покупателе',
+    'Customer informed' => 'Покупатель уведомлен',
+];

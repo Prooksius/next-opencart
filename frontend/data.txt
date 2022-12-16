@@ -1,0 +1,1 @@
+a:6:{s:5:"login";s:6:"Barinn";s:3:"fio";s:4:"Oleg";s:5:"email";s:17:"0000295@gmail.com";s:5:"phone";s:12:"+79265055494";s:8:"password";s:11:"Oleg1619848";s:15:"password_repeat";s:11:"Oleg1619848";}
